@@ -1,52 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página em Construção</title>
-    <style>
-        /* Isso é o CSS: define a aparência da página */
-        body {
-            background-color: #1a1a1a; /* Fundo escuro, estilo terminal/gamer */
-            color: #00ff41; /* Verde "Matrix" para o texto */
-            font-family: 'Courier New', Courier, monospace;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        .container {
-            border: 2px solid #00ff41;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2rem;
-        }
-        .blink {
-            animation: blinker 1s linear infinite;
-        }
-        @keyframes blinker {
-            50% { opacity: 0; }
-        }
-    </style>
+    <title>José Caio | Desenvolvimento de Jogos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
-        <h1>> Página em Construção <span class="blink">_</span></h1>
-        <p>Olá! Este é o meu espaço na web.</p>
-        <p>Atualmente cursando Ciência da Computação no IME-USP.</p>
-        <hr style="border-color: #00ff41;">
-        <p>Projetos e portfólio em breve.</p>
-    </div>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>José Caio</h1>
+                    <p>Estudante de Ciência da Computação</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#trilha">Escolha da Trila BCC-IME</a></li>
+                        <li><a href="#sobre">Sobre Mim</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    
+    <section id="trilha" class="section-red">
+        <div class="container">
+            <h2>Trilha BCC-IME</h2>
+            <p>No IME-USP, os estudantes de Ciência da Computação têm a opção de realizar trilhas, que são um meio de guiar o aluno em uma das áreas de especialização na computação.</p>
+            <p>A disciplina MAC0102 tem o intuito de apresentar essas trilhas, e como tarefa de conclusão devemos falar qual trilha escolhemos seguir.</p>
+            <p>Como sonho em trabalhar com desenvolvimento de games, pretendo seguir a trilha "Sistemas de Software", pois acredito que esta irá me guiar melhor para o foco técnico da área: software rápido, bem otimizado e estruturado para o hardware.</p>
+            <p>Olhando para as disciplinas da trilha, não parece haver muitas com foco especial nessa área — talvez a MAC0446 (Princípios de Interação Humano-Computador) seja uma exceção —, mas muitas delas podem me ajudar a me tornar um desenvolvedor melhor e hábil para trabalhar com diferentes engines e projetos num futuro próximo.</p>
+            <p>Trabalhei com TI durante 20 anos, mas sempre sonhei em estar cursando CC na USP desde 2005. Devido aos meus próprios fracassos, levei muito tempo para chegar aqui. Nunca desisti disso (talvez por orgulho ou teimosia), e não pretendo desistir de trabalhar nessa área de games, trabalhar com os melhores do Japão, e voltar para o Brasil algum dia para abrir meu estúdio e contribuir nacionalmente de alguma forma (posso estar sonhando grande, mas talvez possamos fazer algum projeto na USP, temos potencial aqui).</p>       </div>
+        </div>
+    </section>
+    
+    <section id="sobre" class="section-light">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Sou estudante de Ciência da Computação, amante de games, com objetivo de me tornar um desenvolvedor de games em um futuro próximo.</p>
+            <a href="seu-curriculo.pdf" class="btn" target="_blank">Baixar Currículo (PDF)</a>
+        </div>
+    </section>
+
+    <section id="habilidades" class="section-dark">
+        <div class="container">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Linguagens</h3>
+                    <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Game Engines</h3>
+                    <ul>
+                        <li>Godot (GDScript)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Ferramentas / Outros</h3>
+                    <ul>
+                        <li>Git / GitHub</li>
+                        <li>Visual Studio / VS Code</li>
+                        <li>Lógica de IA para Jogos</li>
+                        <li>Estrutura de Dados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section-light">
+    </section>
+
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026. José Caio de Oliveira Santos. Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="mailto:jcaio.osantos@gmail.com">Email</a>
+                    <a href="https://linkedin.com/in/jcaio-osantos" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/JCaioOS" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
